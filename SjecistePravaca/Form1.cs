@@ -28,7 +28,7 @@ namespace Pravci
         {
             Tocka t = new Tocka();
             t = sjeciste.IzracunajSjeciste(qe, qe2);
-            label4.Text= "Intersection coordinates:\n(" + t.X + " , " + t.Y + ")";
+            label4.Text= "Koordinate sjecišta:\n(" + t.X + " , " + t.Y + ")";
         }
 
         void FillResult()

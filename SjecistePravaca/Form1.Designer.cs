@@ -70,7 +70,7 @@
             this.groupBox1.Size = new System.Drawing.Size(233, 132);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Coeficients";
+            this.groupBox1.Text = "Koeficijenti";
             // 
             // textBox6
             // 
@@ -129,20 +129,23 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Blue;
             this.label10.Location = new System.Drawing.Point(139, 26);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(36, 13);
+            this.label10.Size = new System.Drawing.Size(50, 13);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Line 2";
+            this.label10.Text = "Pravac 2";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.Control;
+            this.label9.ForeColor = System.Drawing.Color.Red;
             this.label9.Location = new System.Drawing.Point(25, 26);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.Size = new System.Drawing.Size(50, 13);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Line 1";
+            this.label9.Text = "Pravac 1";
             // 
             // label6
             // 
@@ -213,9 +216,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(23, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 16);
+            this.label4.Size = new System.Drawing.Size(145, 16);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Intersection coordinates:";
+            this.label4.Text = "Koordinate sjecišta:";
             // 
             // functionPanel1
             // 
