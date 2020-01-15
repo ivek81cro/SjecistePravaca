@@ -54,6 +54,8 @@ namespace Pravci
 
             if (reg.IsMatch(text))
             {
+                FillResult();
+                RacunajSjeciste();
                 return true;
             }
             else
@@ -69,80 +71,38 @@ namespace Pravci
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox1.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
-                this.ActiveControl = textBox1;
-            }
+            if (!Validacija(textBox1.Text))
+                this.ActiveControl = textBox1;            
         }
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox2.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
-                this.ActiveControl = textBox2;
-            }
+            if (!Validacija(textBox2.Text))
+                this.ActiveControl = textBox2;            
         }
 
         private void textBox3_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox3.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
-                this.ActiveControl = textBox3;
-            }
+            if (!Validacija(textBox3.Text))
+                this.ActiveControl = textBox3;            
         }
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox4.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
-                this.ActiveControl = textBox4;
-            }
+            if (!Validacija(textBox4.Text))
+                this.ActiveControl = textBox4;            
         }
 
         private void textBox5_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox5.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
-                this.ActiveControl = textBox5;
-            }
+            if (!Validacija(textBox5.Text))
+                this.ActiveControl = textBox5;            
         }
 
         private void textBox6_Leave(object sender, EventArgs e)
         {
-            if (Validacija(textBox6.Text))
-            {
-                FillResult();
-                RacunajSjeciste();
-            }
-            else
-            {
+            if (!Validacija(textBox6.Text))
                 this.ActiveControl = textBox6;
-            }
         }
     }
 }
