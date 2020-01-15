@@ -8,9 +8,9 @@ namespace Pravci
 {
     public partial class Form1 : Form
     {
-        LineEquation qe;
-        LineEquation qe2;
-        Sjeciste sjeciste;
+        private LineEquation qe;
+        private LineEquation qe2;
+        private Sjeciste sjeciste;
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +26,11 @@ namespace Pravci
         void RacunajSjeciste()
         {
 
-            NumberFormatInfo nfi = new NumberFormatInfo();
-            nfi.NumberDecimalSeparator = ".";
-            Tocka t = new Tocka();
-            t = sjeciste.IzracunajSjeciste(qe, qe2);
+            NumberFormatInfo nfi = new NumberFormatInfo
+            {
+                NumberDecimalSeparator = "."
+            };
+            Tocka t = sjeciste.IzracunajSjeciste(qe, qe2);
             label4.Text = "Koordinate sjecišta:\n(" + t.X.ToString(nfi) + " , " + t.Y.ToString(nfi) + ")";
         }
 
