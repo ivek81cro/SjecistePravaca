@@ -3,13 +3,11 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Graph_lines;
-using log4net;
 
 namespace Pravci
 {
     public partial class Form1 : Form
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(Form1));
         LineEquation qe;
         LineEquation qe2;
         Sjeciste sjeciste;
