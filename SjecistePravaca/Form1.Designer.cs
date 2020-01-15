@@ -79,7 +79,7 @@
             this.textBox6.Size = new System.Drawing.Size(61, 20);
             this.textBox6.TabIndex = 19;
             this.textBox6.Text = "0";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave);
             // 
             // textBox5
             // 
@@ -88,7 +88,7 @@
             this.textBox5.Size = new System.Drawing.Size(61, 20);
             this.textBox5.TabIndex = 18;
             this.textBox5.Text = "0";
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
             // 
             // textBox4
             // 
@@ -97,7 +97,7 @@
             this.textBox4.Size = new System.Drawing.Size(61, 20);
             this.textBox4.TabIndex = 17;
             this.textBox4.Text = "0";
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
             // textBox3
             // 
@@ -106,7 +106,7 @@
             this.textBox3.Size = new System.Drawing.Size(61, 20);
             this.textBox3.TabIndex = 16;
             this.textBox3.Text = "0";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // textBox2
             // 
@@ -115,7 +115,7 @@
             this.textBox2.Size = new System.Drawing.Size(61, 20);
             this.textBox2.TabIndex = 15;
             this.textBox2.Text = "0";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // textBox1
             // 
@@ -124,7 +124,7 @@
             this.textBox1.Size = new System.Drawing.Size(61, 20);
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "0";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // label10
             // 
@@ -213,18 +213,21 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(23, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 16);
+            this.label4.Size = new System.Drawing.Size(147, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Koordinate sjecišta:";
             // 
             // functionPanel1
             // 
+            this.functionPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.functionPanel1.Location = new System.Drawing.Point(262, 12);
             this.functionPanel1.Name = "functionPanel1";
-            this.functionPanel1.Size = new System.Drawing.Size(638, 568);
+            this.functionPanel1.Size = new System.Drawing.Size(658, 617);
             this.functionPanel1.TabIndex = 10;
             // 
             // Form1

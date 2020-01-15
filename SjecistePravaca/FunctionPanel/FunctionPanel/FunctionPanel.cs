@@ -1,9 +1,9 @@
-using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace Graph_lines {
+namespace Graph_lines
+{
 
     /// <summary>
     ///   Delegat koji predstavlja metodu koju možemo dodati panelu.

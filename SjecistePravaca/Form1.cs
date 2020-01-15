@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Graph_lines;
@@ -26,9 +27,12 @@ namespace Pravci
 
         void RacunajSjeciste()
         {
+
+            NumberFormatInfo nfi = new NumberFormatInfo();
+            nfi.NumberDecimalSeparator = ".";
             Tocka t = new Tocka();
             t = sjeciste.IzracunajSjeciste(qe, qe2);
-            label4.Text= "Koordinate sjecišta:\n(" + t.X + " , " + t.Y + ")";
+            label4.Text = "Koordinate sjecišta:\n(" + t.X.ToString(nfi) + " , " + t.Y.ToString(nfi) + ")";
         }
 
         void FillResult()
@@ -44,16 +48,17 @@ namespace Pravci
             functionPanel1.Invalidate();
         }
 
-        private void Validacija(string text)
+        private bool Validacija(string text)
         {
-            Regex reg = new Regex("^[+-]?([0-9]*\\.?[0-9]+|[0-9]+\\.?[0-9]*)([eE][+-]?[0-9]+)?$");
+            Regex reg = new Regex(@"-?\d+(?:\.\d+)?");
 
             if (reg.IsMatch(text))
             {
+                return true;
             }
             else
             {
-                MessageBox.Show("Invalid value");
+                return false;
             }
 
         }
@@ -62,46 +67,82 @@ namespace Pravci
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox1_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox1.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox1.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox1;
+            }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox2.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox2.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox2;
+            }
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void textBox3_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox3.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox3.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox3;
+            }
         }
 
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void textBox4_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox4.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox4.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox4;
+            }
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void textBox5_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox5.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox5.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox5;
+            }
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void textBox6_Leave(object sender, EventArgs e)
         {
-            Validacija(textBox6.Text);
-            FillResult();
-            RacunajSjeciste();
+            if (Validacija(textBox6.Text))
+            {
+                FillResult();
+                RacunajSjeciste();
+            }
+            else
+            {
+                this.ActiveControl = textBox6;
+            }
         }
     }
 }
