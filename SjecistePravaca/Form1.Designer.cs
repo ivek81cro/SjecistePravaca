@@ -45,7 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.functionPanel1 = new Graph_lines.FunctionPanel();
+            Form1 form1 = this;
+            form1.functionPanel1 = new Graph_lines.FunctionPanel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
