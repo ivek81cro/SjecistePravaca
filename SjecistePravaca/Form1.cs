@@ -49,7 +49,7 @@ namespace Pravci
 
         private bool Validacija(string text)
         {
-            Regex reg = new Regex(@"-?\d+(?:\.\d+)?");
+            Regex reg = new Regex(@"^(0|(-?(((0|[1-9]\d*)\.\d+)|([1-9]\d*))))$");
 
             if (reg.IsMatch(text))
             {
