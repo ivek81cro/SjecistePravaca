@@ -45,8 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            Form1 form1 = this;
-            form1.functionPanel1 = new Graph_lines.FunctionPanel();
+            this.functionPanel1 = new Graph_lines.FunctionPanel();
+            this.lblWarning = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,11 +231,24 @@
             this.functionPanel1.Size = new System.Drawing.Size(658, 617);
             this.functionPanel1.TabIndex = 10;
             // 
+            // lblWarning
+            // 
+            this.lblWarning.AutoSize = true;
+            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblWarning.Location = new System.Drawing.Point(27, 340);
+            this.lblWarning.Name = "lblWarning";
+            this.lblWarning.Size = new System.Drawing.Size(188, 36);
+            this.lblWarning.TabIndex = 13;
+            this.lblWarning.Text = "Unesite pravilno formatiran \r\nrealan broj (#.##)";
+            this.lblWarning.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 641);
+            this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.functionPanel1);
@@ -269,6 +282,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblWarning;
     }
 }
 

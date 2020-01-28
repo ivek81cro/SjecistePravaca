@@ -55,13 +55,14 @@ namespace Pravci
             {
                 FillResult();
                 RacunajSjeciste();
+                lblWarning.Visible = false;
                 return true;
             }
             else
             {
+                lblWarning.Visible = true;
                 return false;
             }
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
