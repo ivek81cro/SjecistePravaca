@@ -130,7 +130,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Blue;
+            this.label10.ForeColor = System.Drawing.Color.Red;
             this.label10.Location = new System.Drawing.Point(139, 26);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 13);
@@ -141,7 +141,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.ForeColor = System.Drawing.Color.Blue;
             this.label9.Location = new System.Drawing.Point(25, 26);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 13);
@@ -240,7 +240,7 @@
             this.lblWarning.Name = "lblWarning";
             this.lblWarning.Size = new System.Drawing.Size(188, 36);
             this.lblWarning.TabIndex = 13;
-            this.lblWarning.Text = "Unesite pravilno formatiran \r\nrealan broj (#.##)";
+            this.lblWarning.Text = "Unesite pravilno formatiran \r\nrealan broj (#,##)";
             this.lblWarning.Visible = false;
             // 
             // Form1

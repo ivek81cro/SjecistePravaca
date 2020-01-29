@@ -36,20 +36,20 @@ namespace Pravci
 
         void FillResult()
         {
-            qe.A = Double.Parse(textBox1.Text);
-            qe.B = Double.Parse(textBox2.Text);
-            qe.C = Double.Parse(textBox3.Text);
+            qe.A = Double.Parse(textBox1.Text.Replace('.',','));
+            qe.B = Double.Parse(textBox2.Text.Replace('.', ','));
+            qe.C = Double.Parse(textBox3.Text.Replace('.', ','));
 
-            qe2.A = Double.Parse(textBox4.Text);
-            qe2.B = Double.Parse(textBox5.Text);
-            qe2.C = Double.Parse(textBox6.Text);
+            qe2.A = Double.Parse(textBox4.Text.Replace('.', ','));
+            qe2.B = Double.Parse(textBox5.Text.Replace('.', ','));
+            qe2.C = Double.Parse(textBox6.Text.Replace('.', ','));
 
             functionPanel1.Invalidate();
         }
 
         private bool Validacija(string text)
         {
-            Regex reg = new Regex(@"^(0|(-?(((0|[1-9]\d*)\.\d+)|([1-9]\d*))))$");
+            Regex reg = new Regex(@"^(0|([0*-]?(((0|[1-9]\d*)[\,.]?\d+)|([1-9]\d*))))$");
 
             if (reg.IsMatch(text))
             {
